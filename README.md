@@ -72,10 +72,3 @@ Since this project uses strictly vanilla web standards (HTML5, CSS3, JavaScript)
 1. Double-click `index.html` to open the site in any web browser.
 2. Use the navigation links to move between all 6 pages seamlessly.
 3. All graphics are stored locally in the `images/` directory, so everything loads without needing an internet connection.
-
-## Moodle Submission Guide
-
-To submit to Moodle:
-1. Ensure the entire `FDD_ISP` folder is intact.
-2. Right-click the folder and select **Compress to ZIP file** (e.g., `FDD_ISP.zip`).
-3. Upload the ZIP file directly through the Moodle submission link.
