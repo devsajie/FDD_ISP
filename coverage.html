@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverage &amp; Network | Nepal Space Telecom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/dish-terminal.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Minimalist Nav Bar -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>NEPAL SPACE TELECOM</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="plans.html">PLANS &amp; HARDWARE</a>
+                <a href="technology.html">TECHNOLOGY</a>
+                <a href="coverage.html" class="active">COVERAGE</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <a href="contact.html" class="nav-cta">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="sub-heading">KATHMANDU VALLEY DEPLOYMENT</span>
+            <h1>SATELLITE NETWORK AVAILABILITY</h1>
+            <p>Phase 1 satellite beams are fully active across Kathmandu Valley with 100% line-of-sight coverage anchored by our Maitidevi Gateway.</p>
+        </div>
+    </header>
+
+    <!-- Coverage Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <span class="sub-heading">ORBITAL FOOTPRINT</span>
+                    <h2>KATHMANDU VALLEY BEAM MATRIX</h2>
+                    <p class="body-text">Our low-altitude satellite grid provides overlapping orbital cells covering the entire Kathmandu Valley basin, eliminating geographic dead zones common with traditional line-of-sight wireless towers.</p>
+                    <p class="body-text">Subscribers in Maitidevi, Baneshwor, Thamel, Lalitpur, and Bhaktapur enjoy continuous high-bandwidth connectivity directly via the Maitidevi Primary Ground Terminal.</p>
+
+                    <div class="coverage-badge-box" style="margin-top: 10px;">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">100% BEAM COVERAGE IN KATHMANDU</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/coverage-kathmandu.svg" alt="Kathmandu Valley Satellite Coverage Map" style="width: 100%; border: 1px solid var(--border-color);">
+                </div>
+            </div>
+
+            <!-- Interactive Area Availability Checker -->
+            <div class="coverage-check-box">
+                <span class="sub-heading">INTERACTIVE AREA CHECKER</span>
+                <h3>CHECK YOUR LOCALITY AVAILABILITY</h3>
+                <p class="body-text">Select your neighborhood within Kathmandu to check direct satellite line-of-sight and ground relay metrics:</p>
+
+                <select id="coverageAreaSelect" class="coverage-select">
+                    <option value="">-- SELECT YOUR KATHMANDU LOCALITY --</option>
+                    <option value="maitidevi">Maitidevi / Setopul (HQ Relay)</option>
+                    <option value="thamel">Thamel / Lazimpat</option>
+                    <option value="baneshwor">New Baneshwor / Tinkune</option>
+                    <option value="patan">Patan / Lalitpur City</option>
+                    <option value="bhaktapur">Bhaktapur Valley Basin</option>
+                    <option value="other">Outer Valley / Ring Road</option>
+                </select>
+
+                <div id="coverageResultCard" class="coverage-result-card">
+                    <h4 style="color: #00e676; margin-bottom: 12px; font-size: 1.1rem;">✔ <span id="areaNameSpan">Area Name</span></h4>
+                    <p style="font-size: 0.88rem; margin-bottom: 6px;"><strong>Network Status:</strong> <span id="areaStatusSpan">Online</span></p>
+                    <p style="font-size: 0.88rem; margin-bottom: 6px;"><strong>Expected Latency:</strong> <span id="areaLatencySpan">20 ms</span></p>
+                    <p style="font-size: 0.88rem; margin-bottom: 16px;"><strong>Connected Gateway:</strong> <span id="areaRelaySpan">Maitidevi Hub</span></p>
+                    <a href="contact.html" class="btn btn-white btn-full">DEPLOY SERVICE IN THIS AREA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Roadmap Grid -->
+    <section class="section border-top bg-darker">
+        <div class="container">
+            <span class="sub-heading">DEPLOYMENT TIMELINE</span>
+            <h2>ROLLOUT PHASES ACROSS NEPAL</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="spec-category" style="color: #00e676;">PHASE 1 (ACTIVE NOW)</span>
+                    <h3 style="margin: 8px 0 10px;">Kathmandu Valley</h3>
+                    <p>Residential and Enterprise satellite service active across Kathmandu, Lalitpur, and Bhaktapur with Maitidevi gateway telemetry.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="spec-category" style="color: #38bdf8;">PHASE 2 (LATE 2026)</span>
+                    <h3 style="margin: 8px 0 10px;">Pokhara &amp; Central Nepal</h3>
+                    <p>Deployment of western satellite downlink stations and expansion of Roam mobile kits for trekking routes and resorts.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="spec-category" style="color: #a1a1a1;">PHASE 3 (2027)</span>
+                    <h3 style="margin: 8px 0 10px;">All-Nepal &amp; Himalayan Range</h3>
+                    <p>Remote district connectivity for schools, rural clinics, and high-altitude Himalayan monitoring outposts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-top">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <strong>NEPAL SPACE TELECOM PVT. LTD.</strong>
+                <p>Maitidevi, Kathmandu, Nepal | Founder: Sajal Nepal</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="plans.html">Plans &amp; Hardware</a>
+                <a href="technology.html">Technology</a>
+                <a href="coverage.html">Coverage</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 NEPAL SPACE TELECOM. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

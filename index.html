@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/dish-terminal.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,20 +15,21 @@
     <!-- Minimalist Nav Bar -->
     <nav class="nav" id="mainNav">
         <div class="nav-inner">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                 </svg>
                 <span>NEPAL SPACE TELECOM</span>
             </a>
             <div class="nav-links">
-                <a href="#plans">PLANS</a>
-                <a href="#technology">TECHNOLOGY</a>
-                <a href="#specs">SPECS</a>
-                <a href="#about">ABOUT</a>
-                <a href="#faq">FAQ</a>
+                <a href="index.html" class="active">HOME</a>
+                <a href="plans.html">PLANS &amp; HARDWARE</a>
+                <a href="technology.html">TECHNOLOGY</a>
+                <a href="coverage.html">COVERAGE</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
             </div>
-            <a href="#order" class="nav-cta">ORDER NOW</a>
+            <a href="contact.html" class="nav-cta">ORDER NOW</a>
         </div>
     </nav>
 
@@ -47,6 +49,15 @@
             </form>
             <div class="hero-secondary-btn">
                 <button type="button" class="btn btn-outline" id="openCoverageBtn">CHECK KATHMANDU COVERAGE</button>
+            </div>
+        </div>
+
+        <!-- Hero Panoramic Satellite Media Showcase -->
+        <div class="hero-media-container">
+            <img src="images/hero-satellite.svg" alt="Nepal Space Telecom LEO Satellite over Kathmandu Valley" class="hero-satellite-img">
+            <div class="hero-media-caption">
+                <span class="pulse-dot"></span>
+                <span>LIVE LINK: 550 KM LEO CONSTELLATION OVER MAITIDEVI TERMINAL</span>
             </div>
         </div>
     </section>
@@ -86,6 +97,9 @@
                 <!-- Residential Plan -->
                 <div class="plan-card">
                     <div class="plan-badge">MOST POPULAR</div>
+                    <div class="plan-media">
+                        <img src="images/dish-terminal.svg" alt="NST Phased Array Dish Terminal Standard Kit" class="plan-img">
+                    </div>
                     <span class="plan-type">RESIDENTIAL</span>
                     <h3>Home Standard</h3>
                     <p class="plan-desc">For homes, remote work, and streaming across Kathmandu.</p>
@@ -109,11 +123,15 @@
                         <li><span>Hardware</span> NST Phased Array Dish + Wi-Fi 6 Router</li>
                     </ul>
 
-                    <a href="#order" class="btn btn-white btn-full select-plan-btn" data-plan="Residential Standard">SELECT RESIDENTIAL</a>
+                    <a href="contact.html?plan=Residential" class="btn btn-white btn-full select-plan-btn" data-plan="Residential Standard">SELECT RESIDENTIAL</a>
                 </div>
 
                 <!-- Business Plan -->
                 <div class="plan-card highlighted-card">
+                    <div class="plan-badge">HIGH DEMAND</div>
+                    <div class="plan-media">
+                        <img src="images/router-wifi6.svg" alt="NST Business High-Performance Kit with Wi-Fi 6" class="plan-img">
+                    </div>
                     <span class="plan-type">ENTERPRISE</span>
                     <h3>Business High-Performance</h3>
                     <p class="plan-desc">High-demand throughput with SLA, prioritization, and static IP options.</p>
@@ -137,12 +155,15 @@
                         <li><span>Hardware</span> Dual-Gimbal Auto-Tracking Kit</li>
                     </ul>
 
-                    <a href="#order" class="btn btn-white btn-full select-plan-btn" data-plan="Business High-Performance">SELECT BUSINESS</a>
+                    <a href="contact.html?plan=Business" class="btn btn-white btn-full select-plan-btn" data-plan="Business High-Performance">SELECT BUSINESS</a>
                 </div>
 
                 <!-- Mobile / Roam (Coming Soon) -->
                 <div class="plan-card disabled-card">
                     <div class="plan-badge coming-soon">PHASE 2</div>
+                    <div class="plan-media">
+                        <img src="images/dish-terminal.svg" alt="NST Roam & Expedition Compact Terminal" class="plan-img" style="opacity: 0.5;">
+                    </div>
                     <span class="plan-type">PORTABLE</span>
                     <h3>Roam & Expedition</h3>
                     <p class="plan-desc">Portable satellite connectivity for off-grid travel outside Kathmandu.</p>
@@ -171,6 +192,41 @@
         </div>
     </section>
 
+    <!-- Dedicated Hardware Spotlight Showcase -->
+    <section id="hardware" class="section border-top">
+        <div class="container">
+            <span class="sub-heading">ENGINEERED HARDWARE</span>
+            <h2>LOCAL HARDWARE DEPLOYED TO KATHMANDU</h2>
+            <p class="body-text max-w-700">Every Nepal Space Telecom subscriber receives an integrated hardware kit engineered for simple rooftop installation and high-throughput Kathmandu weather survivability.</p>
+
+            <div class="hardware-grid">
+                <div class="hardware-item">
+                    <div class="hardware-img-container">
+                        <img src="images/dish-terminal.svg" alt="NST Phased Array Dish Antenna" class="hardware-img">
+                        <div class="hardware-tag">IP56 RATED</div>
+                    </div>
+                    <div class="hardware-info">
+                        <span class="spec-category">OUTDOOR TERMINAL</span>
+                        <h3>NST Phased-Array Dish</h3>
+                        <p class="body-text">Equipped with hundreds of micro-beamforming antennas that steer radio frequencies electronically to track LEO satellites passing 550 km above Kathmandu at 27,000 km/h with zero moving dish friction.</p>
+                    </div>
+                </div>
+
+                <div class="hardware-item">
+                    <div class="hardware-img-container">
+                        <img src="images/router-wifi6.svg" alt="NST Tri-Band Wi-Fi 6 Indoor Router" class="hardware-img">
+                        <div class="hardware-tag">WI-FI 6 TRI-BAND</div>
+                    </div>
+                    <div class="hardware-info">
+                        <span class="spec-category">INDOOR ROUTER</span>
+                        <h3>Tri-Band Wi-Fi 6 Router</h3>
+                        <p class="body-text">Blazing fast indoor wireless throughput with WPA3 enterprise security, dual gigabit ethernet interfaces, and intelligent auto-mesh capability covering up to 2,000 square feet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Deep Dive Technology Overview -->
     <section id="technology" class="section border-top bg-darker">
         <div class="container">
@@ -182,13 +238,92 @@
                     <p class="body-text">Nepal Space Telecom operates a mesh system of Low Earth Orbit (LEO) satellites at just 550 km. Because signal travel distances are dramatically shorter, you get fiber-grade latency directly over the air.</p>
                 </div>
                 <div class="tech-graphic-box">
-                    <div class="orbit-diagram">
-                        <div class="orbit-line geo"><span class="orbit-tag">GEOSTATIONARY (35,786 km) — 600ms Latency</span></div>
-                        <div class="orbit-line leo"><span class="orbit-tag active">NEPAL SPACE TELECOM GRID (550 km) — 20ms Latency</span></div>
-                        <div class="earth-surface">
-                            <span>Maitidevi Ground Relay Terminal | Kathmandu Ground Link</span>
-                        </div>
+                    <img src="images/technology-orbit.svg" alt="Low Earth Orbit vs Geostationary Architecture Diagram" class="tech-orbit-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia & Video Showcase Section -->
+    <section id="multimedia" class="section border-top">
+        <div class="container">
+            <span class="sub-heading">MULTIMEDIA &amp; ANIMATION</span>
+            <h2>WATCH LEO BROADBAND IN ACTION</h2>
+            <p class="body-text max-w-700">See how Low Earth Orbit satellite constellations maintain high-speed connectivity with electronic beamforming across mountainous terrain.</p>
+
+            <div class="video-container-card">
+                <div class="video-responsive-wrapper">
+                    <iframe 
+                        src="https://www.youtube-nocookie.com/embed/giQ8xEWjnBs?rel=0&modestbranding=1" 
+                        title="How LEO Satellite Internet Works - Animation &amp; Technology" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-meta-bar">
+                    <div class="video-meta-item">
+                        <span class="meta-label">TOPIC</span>
+                        <strong>LEO Constellation &amp; Phased-Array Tracking</strong>
                     </div>
+                    <div class="video-meta-item">
+                        <span class="meta-label">SOURCE</span>
+                        <strong>Satellite Engineering Simulation</strong>
+                    </div>
+                    <div class="video-meta-item">
+                        <span class="meta-label">RESOLUTION</span>
+                        <strong>1080p Full HD</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Broadband Speed Test Section -->
+    <section id="speedtest" class="section border-top bg-darker">
+        <div class="container text-center">
+            <span class="sub-heading">LIVE INTERACTIVE BENCHMARK</span>
+            <h2>KATHMANDU VALLEY SPEED TEST</h2>
+            <p class="body-text max-w-600">Simulate real-time throughput from our Maitidevi Ground Station to active LEO satellites.</p>
+
+            <div class="speedtest-box">
+                <div class="gauge-wrapper">
+                    <svg class="speed-gauge" viewBox="0 0 200 120">
+                        <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#222222" stroke-width="14" stroke-linecap="round"/>
+                        <path id="gaugeProgress" d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="#00e676" stroke-width="14" stroke-dasharray="251.2" stroke-dashoffset="251.2" stroke-linecap="round"/>
+                    </svg>
+                    <div class="gauge-readout">
+                        <span id="speedValue" class="gauge-number">0</span>
+                        <span class="gauge-unit">Mbps</span>
+                    </div>
+                </div>
+
+                <div class="speedtest-results">
+                    <div class="res-card">
+                        <span class="res-label">DOWNLOAD</span>
+                        <strong id="downResult">--</strong>
+                        <small>Mbps</small>
+                    </div>
+                    <div class="res-card">
+                        <span class="res-label">UPLOAD</span>
+                        <strong id="upResult">--</strong>
+                        <small>Mbps</small>
+                    </div>
+                    <div class="res-card">
+                        <span class="res-label">LATENCY</span>
+                        <strong id="pingResult">--</strong>
+                        <small>ms</small>
+                    </div>
+                    <div class="res-card">
+                        <span class="res-label">SERVER</span>
+                        <strong class="highlight-green">Kathmandu</strong>
+                        <small>Maitidevi Hub</small>
+                    </div>
+                </div>
+
+                <div class="speedtest-actions">
+                    <button type="button" class="btn btn-white" id="startSpeedTestBtn">START SPEED TEST</button>
+                    <span id="testStatusText" class="test-status">Ready for test</span>
                 </div>
             </div>
         </div>
@@ -223,6 +358,9 @@
             <h2>TERMINAL & ROUTER SPECS</h2>
             <div class="specs-grid">
                 <div class="spec-card">
+                    <div class="spec-img-box">
+                        <img src="images/dish-terminal.svg" alt="NST Standard Dish Terminal Graphic" class="spec-img">
+                    </div>
                     <span class="spec-category">USER TERMINAL</span>
                     <h3>NST Dish Standard</h3>
                     <ul class="spec-list">
@@ -235,6 +373,9 @@
                     </ul>
                 </div>
                 <div class="spec-card">
+                    <div class="spec-img-box">
+                        <img src="images/router-wifi6.svg" alt="NST Indoor Wi-Fi 6 Router Graphic" class="spec-img">
+                    </div>
                     <span class="spec-category">INDOOR ROUTER</span>
                     <h3>Wi-Fi 6 Router</h3>
                     <ul class="spec-list">
@@ -246,6 +387,9 @@
                     </ul>
                 </div>
                 <div class="spec-card">
+                    <div class="spec-img-box mounting-box">
+                        <img src="images/coverage-kathmandu.svg" alt="NST Mounting and Coverage Grid" class="spec-img">
+                    </div>
                     <span class="spec-category">POWER & MOUNTING</span>
                     <h3>Mounting Hardware</h3>
                     <ul class="spec-list">
@@ -269,10 +413,15 @@
                     <p class="body-text">Nepal Space Telecom Pvt. Ltd. was founded to build resilient, space-based telecommunications infrastructure across Nepal. Operating out of our operations center in Maitidevi, Kathmandu, we manage ground node alignment, network stability, and customer deployments.</p>
                 </div>
                 <div class="founder-card">
-                    <span class="spec-category">LEADERSHIP</span>
-                    <h3>Sajal Nepal</h3>
-                    <p class="founder-title">Founder & Chief Executive Officer</p>
-                    <p class="body-text">Pioneering satellite internet access, orbital communication links, and next-generation connectivity options from Maitidevi to empower communities throughout Kathmandu and beyond.</p>
+                    <div class="founder-flex">
+                        <img src="images/founder-sajal.png" alt="Founder Sajal Nepal Profile" class="founder-avatar-img">
+                        <div class="founder-details">
+                            <span class="spec-category">LEADERSHIP</span>
+                            <h3>Sajal Nepal</h3>
+                            <p class="founder-title">Founder & Chief Executive Officer</p>
+                            <p class="body-text">Pioneering satellite internet access, orbital communication links, and next-generation connectivity options from Maitidevi to empower communities throughout Kathmandu and beyond.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -368,11 +517,12 @@
                 <p>Maitidevi, Kathmandu, Nepal | Founder: Sajal Nepal</p>
             </div>
             <div class="footer-links">
-                <a href="#plans">Plans</a>
-                <a href="#technology">Technology</a>
-                <a href="#specs">Specs</a>
-                <a href="#about">About</a>
-                <a href="#faq">FAQ</a>
+                <a href="index.html">Home</a>
+                <a href="plans.html">Plans &amp; Hardware</a>
+                <a href="technology.html">Technology</a>
+                <a href="coverage.html">Coverage</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-copy">
                 &copy; 2026 NEPAL SPACE TELECOM. ALL RIGHTS RESERVED.
@@ -387,11 +537,8 @@
             <span class="sub-heading">COVERAGE STATUS</span>
             <h3>NETWORK AVAILABILITY</h3>
             
-            <div class="coverage-radar-container">
-                <div class="radar-circle circle-1"></div>
-                <div class="radar-circle circle-2"></div>
-                <div class="radar-sweep"></div>
-                <div class="radar-pin"></div>
+            <div class="modal-map-preview">
+                <img src="images/coverage-kathmandu.svg" alt="Kathmandu Valley Satellite Coverage Map" class="modal-coverage-img">
             </div>
 
             <div class="coverage-badge-box">
@@ -400,10 +547,10 @@
             </div>
 
             <p class="body-text modal-desc">
-                Active service is exclusively online for <strong>Kathmandu Valley</strong>. Outer district satellite relays are currently undergoing testing for Phase 2 rollout.
+                Active service is exclusively online for <strong>Kathmandu Valley</strong> (Maitidevi, Lalitpur, Bhaktapur, and Thamel). Outer district satellite relays are currently undergoing testing for Phase 2 rollout.
             </p>
 
-            <a href="#order" class="btn btn-white btn-full" id="modalQuoteBtn">ORDER FOR KATHMANDU</a>
+            <a href="contact.html" class="btn btn-white btn-full" id="modalQuoteBtn">ORDER FOR KATHMANDU</a>
         </div>
     </div>
 

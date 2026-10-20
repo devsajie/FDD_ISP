@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact &amp; Order Hardware | Nepal Space Telecom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/dish-terminal.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Minimalist Nav Bar -->
+    <nav class="nav" id="mainNav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>NEPAL SPACE TELECOM</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="plans.html">PLANS &amp; HARDWARE</a>
+                <a href="technology.html">TECHNOLOGY</a>
+                <a href="coverage.html">COVERAGE</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html" class="active">CONTACT</a>
+            </div>
+            <a href="contact.html" class="nav-cta">ORDER NOW</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="sub-heading">GET CONNECTED IN KATHMANDU</span>
+            <h1>DEPLOYMENT REQUEST &amp; CONTACT</h1>
+            <p>Order your rooftop phased-array terminal or contact our Maitidevi engineering team for inquiries.</p>
+        </div>
+    </header>
+
+    <!-- Contact & Order Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Contact Info Cards -->
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <h4>Maitidevi Headquarters</h4>
+                    <p>Ground Relay Station, Setopul Road, Maitidevi, Kathmandu, Nepal</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <h4>Direct Support Hotline</h4>
+                    <p>+977 9801000000<br>Sunday – Friday: 8:00 AM – 8:00 PM</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    <h4>Electronic Mail</h4>
+                    <p>deployments@nepalspace.com.np<br>support@nepalspace.com.np</p>
+                </div>
+            </div>
+
+            <!-- Checkout Order Form -->
+            <div class="container max-w-600">
+                <div class="form-header text-center">
+                    <span class="sub-heading">ORDER HARDWARE</span>
+                    <h2>SERVICE DEPLOYMENT REQUEST</h2>
+                    <p class="body-text">Enter your delivery details to check rooftop line-of-sight and place your hardware order.</p>
+                </div>
+
+                <div id="successBanner" class="success-banner">
+                    ✔ Order received! Our Maitidevi logistics team will contact you within 24 hours.
+                </div>
+
+                <!-- Minimalist Form with JavaScript Validation -->
+                <form id="orderForm" class="starlink-minimal-form" novalidate>
+                    <div class="field-group">
+                        <label for="selectedPlanInput">SELECTED PLAN</label>
+                        <select id="selectedPlanInput" class="minimal-input">
+                            <option value="Residential Standard">Residential Standard — NPR 3,500/mo</option>
+                            <option value="Business High-Performance">Business High-Performance — NPR 12,500/mo</option>
+                        </select>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="fullAddress">KATHMANDU DELIVERY ADDRESS *</label>
+                        <input type="text" id="fullAddress" class="minimal-input" placeholder="e.g. House No. 12, Maitidevi, Kathmandu" required>
+                        <span class="field-error" id="errAddress">Please enter your Kathmandu address.</span>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-group">
+                            <label for="custName">FULL NAME *</label>
+                            <input type="text" id="custName" class="minimal-input" placeholder="e.g. Sajal Nepal" required>
+                            <span class="field-error" id="errName">Please enter your full name.</span>
+                        </div>
+
+                        <div class="field-group">
+                            <label for="custPhone">NEPALI MOBILE *</label>
+                            <input type="tel" id="custPhone" class="minimal-input" placeholder="e.g. 98XXXXXXXX" required>
+                            <span class="field-error" id="errPhone">Enter a valid 10-digit phone number (98... or 97...).</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-white btn-full btn-large">SUBMIT DEPLOYMENT REQUEST</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer border-top">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <strong>NEPAL SPACE TELECOM PVT. LTD.</strong>
+                <p>Maitidevi, Kathmandu, Nepal | Founder: Sajal Nepal</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="plans.html">Plans &amp; Hardware</a>
+                <a href="technology.html">Technology</a>
+                <a href="coverage.html">Coverage</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 NEPAL SPACE TELECOM. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
